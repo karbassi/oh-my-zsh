@@ -58,7 +58,7 @@ ZSH_THEME_SVN_PROMPT_UNTRACKED="%{$fg[cyan]%} ‽%{$reset_color%}"
 local return_status="%{$fg[red]%}%(?..⏎)%{$reset_color%}"
 
 PROMPT='
-%{$fg_bold[yellow]%}%n%{$reset_color%} at %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}
+${THE_TIME} %{$fg_bold[yellow]%}%n%{$reset_color%} at %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}
 $(virtualenv_info)$ '
 
 RPROMPT='${return_status}$(git_prompt_status)$(svn_prompt_status)$(hg_prompt_info)$(git_prompt_info)$(svn_prompt_info)%{$reset_color%}'
